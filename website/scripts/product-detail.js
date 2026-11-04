@@ -1,7 +1,7 @@
 (() => {
   const products = [
     { id: 1, category: "咖啡", name: "經典美式咖啡", price: 110, description: "選用中深烘焙精品咖啡豆，帶有濃郁榛果與黑巧克力香氣，口感順口甘醇。", origin: "CLASSIC AMERICANO", image: "americano.jpg", categoryId: "coffee" },
-    { id: 2, category: "咖啡", name: "燕麥奶拿鐵", price: 150, description: "濃縮咖啡搭配優質植物燕麥奶，呈現自然堅果甘甜與奶泡密緻口感。", origin: "OAT MILK LATTE", image: "oat_milk_latte.jpg", categoryId: "coffee" },
+    { id: 2, category: "手工甜點", name: "草莓蛋糕", price: 150, description: "柔軟海綿蛋糕夾入新鮮草莓與香滑鮮奶油，酸甜清爽，為午後時光添一份輕甜。", origin: "STRAWBERRY CAKE", image: "strawberry_cake.jpg", categoryId: "dessert" },
     { id: 3, category: "咖啡", name: "西西里檸檬氣泡咖啡", price: 140, description: "新鮮檸檬汁與氣泡水調合萃取濃縮咖啡，果酸清爽，夏季解膩首選。", origin: "SICILIAN SPARKLING COFFEE", image: "coffee1.jpg", categoryId: "coffee" },
     { id: 4, category: "咖啡", name: "焦糖瑪奇朵", price: 160, description: "香濃奶泡上淋上自製香草糖漿與焦糖醬，甜而不膩，層次豐富。", origin: "CARAMEL MACCHIATO", image: "coffee2.jpg", categoryId: "coffee" },
     { id: 5, category: "輕食", name: "煙燻牛肉起司三明治", price: 180, description: "嚴選黑胡椒煙燻牛肉片搭配切達起司與酸黃瓜，使用巧巴達麵包壓烤至外酥內軟。", origin: "SMOKED BEEF & CHEESE SANDWICH", image: "beef_sandwidth.jpg", categoryId: "light-food" },
