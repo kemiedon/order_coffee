@@ -336,6 +336,11 @@ a {
   line-height: 1.55;
 }
 
+.visit-title__first-line {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .visit-card__intro > p:not(.eyebrow) {
   margin: 0.8rem 0 1.5rem;
   color: rgba(255, 253, 249, 0.73);
@@ -570,6 +575,10 @@ a {
 @media (max-width: 575.98px) {
   .visit-card {
     border-top-right-radius: 3.5rem;
+  }
+
+  .visit-title__first-line {
+    font-size: clamp(1.4rem, 7vw, 2rem);
   }
 
   .visit-card__intro,
