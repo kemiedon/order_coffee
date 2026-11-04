@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f3ed">
+    <meta name="description" content="探索 Lazy coffee 的風味提案，為自己挑一杯咖啡、一份甜點或一份輕食。">
+    <title>產品介紹｜Lazy coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&family=Titillium+Web:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="styles/shared.css" rel="stylesheet">
+    <link href="styles/product-detail.css" rel="stylesheet">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至主要內容</a>
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg" aria-label="主要導覽">
+        <div class="container">
+          <a class="navbar-brand brand-mark" href="index.html" aria-label="Lazy coffee 首頁">
+            <img class="brand-mark__logo" src="imgs/logo.png" alt="">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#siteNavigation"
+            aria-controls="siteNavigation"
+            aria-expanded="false"
+            aria-label="切換導覽選單"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="siteNavigation">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="products.html">產品一覽</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html#story">關於我們</a></li>
+              <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                <a class="nav-visit" href="index.html#visit">預約來店 <i class="fa-regular fa-calendar-days" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="product-detail section-pad" aria-labelledby="product-name">
+        <div class="container">
+          <nav class="product-breadcrumb" aria-label="麵包屑">
+            <a href="products.html">產品一覽</a>
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            <span data-product-category>產品介紹</span>
+          </nav>
+
+          <div class="product-detail__layout" id="productDetail" hidden>
+            <div class="product-detail__image">
+              <img data-product-image src="" alt="">
+              <span class="product-detail__tag" data-product-category></span>
+            </div>
+            <div class="product-detail__copy">
+              <p class="eyebrow"><span></span> <span class="font-en" data-product-origin></span></p>
+              <h1 id="product-name" data-product-name></h1>
+              <p class="product-detail__price" data-product-price></p>
+              <p class="product-detail__description" data-product-description></p>
+              <div class="product-detail__actions">
+                <a class="button-primary" href="index.html#visit">
+                  預約來店 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+                <a class="button-outline" data-category-link href="products.html">
+                  瀏覽同類產品
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-detail__not-found" id="productNotFound" role="status" hidden>
+            <p class="eyebrow"><span></span> PRODUCT NOT FOUND</p>
+            <h1>找不到這項產品</h1>
+            <p>請回到產品一覽，挑選其他風味提案。</p>
+            <a class="button-primary" href="products.html">返回產品一覽 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <a class="brand-mark brand-mark--footer" href="index.html" aria-label="回到 Lazy coffee 首頁">
+          <span class="brand-mark__name">Lazy coffee</span>
+          <span class="brand-mark__caption">SLOW DOWN, SIP SLOWLY</span>
+        </a>
+        <p>留一點時間，給生活的香氣。</p>
+        <span class="site-footer__copyright font-en">© 2026 LAZY COFFEE</span>
+      </div>
+    </footer>
+    <script src="scripts/product-detail.js"></script>
+  </body>
+</html>

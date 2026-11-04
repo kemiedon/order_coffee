@@ -85,6 +85,13 @@ a {
   line-height: 1.15;
 }
 
+.brand-mark__logo {
+  display: block;
+  width: 180px;
+  max-width: 42vw;
+  height: auto;
+}
+
 .brand-mark:hover {
   color: var(--coffee);
 }
@@ -171,7 +178,7 @@ a {
   padding: 2rem 0;
   background:
     linear-gradient(90deg, rgba(42, 34, 27, 0.88), rgba(42, 34, 27, 0.62) 52%, rgba(42, 34, 27, 0.12)),
-    url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=2000&q=85") center 48% / cover no-repeat;
+    url("../imgs/page_banner.jpg") center 48% / cover no-repeat;
 }
 
 .about-hero__inner {

@@ -90,6 +90,13 @@ a {
   text-decoration: none;
 }
 
+.brand-mark__logo {
+  display: block;
+  width: 180px;
+  max-width: 42vw;
+  height: auto;
+}
+
 .brand-mark:hover {
   color: var(--coffee);
 }

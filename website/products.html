@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#f7f3ed">
     <meta
       name="description"
-      content="瀏覽 Lazy coffee 的咖啡、手作甜點與日常飲品風味提案。正式品項及價格以店內公告為準。"
+      content="瀏覽 Lazy coffee 的咖啡、輕食與手工甜點菜單，查看產品描述與價格。"
     >
     <title>產品一覽｜Lazy coffee</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +27,7 @@
       <nav class="navbar navbar-expand-lg" aria-label="主要導覽">
         <div class="container">
           <a class="navbar-brand brand-mark" href="index.html" aria-label="Lazy coffee 首頁">
-            <span class="brand-mark__name">Lazy coffee</span>
-            <span class="brand-mark__caption">SLOW DOWN, SIP SLOWLY</span>
+            <img class="brand-mark__logo" src="imgs/logo.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNavigation" aria-controls="siteNavigation" aria-expanded="false" aria-label="切換導覽選單">
             <span class="navbar-toggler-icon"></span>
@@ -60,10 +59,11 @@
       <section class="products-list section-pad" aria-label="風味提案">
         <div class="container">
           <div class="products-intro">
-            <p class="products-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> 已提供品項依指定價格標示；其餘 8 項為補充提案，價格待確認。照片為 Unsplash 示意圖。</p>
+            <p class="products-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> 以下品項與價格依本店菜單標示；照片為 Unsplash 示意圖。</p>
             <nav class="category-nav" aria-label="產品分類">
               <a href="#coffee">咖啡 <span class="font-en">COFFEE</span></a>
-              <a href="#dessert">手作甜點 <span class="font-en">DESSERT</span></a>
+              <a href="#light-food">輕食 <span class="font-en">LIGHT MEAL</span></a>
+              <a href="#dessert">手工甜點 <span class="font-en">DESSERT</span></a>
             </nav>
           </div>
 
@@ -76,72 +76,106 @@
               <p>細細品味不同產地、烘焙與沖煮帶來的香氣變化。</p>
             </div>
             <div class="product-grid">
-              <article class="product-card">
+              <a class="product-card product-card--link" href="product.html?id=1" aria-label="查看產品：經典美式咖啡">
                 <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="一杯奶泡細緻的拿鐵咖啡" loading="lazy">
-                  <span class="product-card__tag">人氣品項</span>
-                </div>
-                <div class="product-card__copy">
-                  <p class="product-card__origin font-en">MILK &amp; COFFEE</p>
-                  <div class="product-card__title"><h3>拿鐵咖啡</h3><span class="product-price">NT$165</span></div>
-                  <p>濃醇咖啡與綿密奶香交融，陪你享受悠閒片刻。</p>
-                </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="帶有焦糖色澤的瑪琪朵咖啡" loading="lazy">
-                  <span class="product-card__tag">人氣品項</span>
-                </div>
-                <div class="product-card__copy">
-                  <p class="product-card__origin font-en">CARAMEL MACCHIATO</p>
-                  <div class="product-card__title"><h3>焦糖瑪琪朵咖啡</h3><span class="product-price">NT$175</span></div>
-                  <p>咖啡香、奶香與焦糖甜味交織，帶來豐富的風味層次。</p>
-                </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="咖啡豆與手沖咖啡器具" loading="lazy">
-                  <span class="product-card__tag">補充提案</span>
+                  <img src="imgs/products/americano.jpg" alt="經典美式咖啡" loading="lazy">
+                  <span class="product-card__tag">咖啡</span>
                 </div>
                 <div class="product-card__copy">
                   <p class="product-card__origin font-en">CLASSIC AMERICANO</p>
-                  <div class="product-card__title"><h3>經典美式咖啡</h3><span class="product-price product-price--pending">價格待確認</span></div>
-                  <p>以濃縮咖啡加入熱水，呈現清爽純粹的咖啡香氣。</p>
+                  <div class="product-card__title"><h3>經典美式咖啡</h3><span class="product-price">NT$110</span></div>
+                  <p>選用中深烘焙精品咖啡豆，帶有濃郁榛果與黑巧克力香氣，口感順口甘醇。</p>
                 </div>
-              </article>
-              <article class="product-card">
+              </a>
+              <a class="product-card product-card--link" href="product.html?id=2" aria-label="查看產品：燕麥奶拿鐵">
                 <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="手沖咖啡注入分享壺" loading="lazy">
-                  <span class="product-card__tag">補充提案</span>
+                  <img src="imgs/products/oat_milk_latte.jpg" alt="燕麥奶拿鐵" loading="lazy">
+                  <span class="product-card__tag">咖啡</span>
                 </div>
                 <div class="product-card__copy">
-                  <p class="product-card__origin font-en">HAND DRIP COFFEE</p>
-                  <div class="product-card__title"><h3>單品手沖咖啡</h3><span class="product-price product-price--pending">價格待確認</span></div>
-                  <p>以手沖方式細細展現咖啡豆的香氣與產地風味。</p>
+                  <p class="product-card__origin font-en">OAT MILK LATTE</p>
+                  <div class="product-card__title"><h3>燕麥奶拿鐵</h3><span class="product-price">NT$150</span></div>
+                  <p>濃縮咖啡搭配優質植物燕麥奶，呈現自然堅果甘甜與奶泡密緻口感。</p>
                 </div>
-              </article>
-              <article class="product-card">
+              </a>
+              <a class="product-card product-card--link" href="product.html?id=3" aria-label="查看產品：西西里檸檬氣泡咖啡">
                 <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="濃郁的巧克力咖啡飲品" loading="lazy">
-                  <span class="product-card__tag">補充提案</span>
+                  <img src="imgs/products/coffee1.jpg" alt="西西里檸檬氣泡咖啡" loading="lazy">
+                  <span class="product-card__tag">咖啡</span>
                 </div>
                 <div class="product-card__copy">
-                  <p class="product-card__origin font-en">MOCHA</p>
-                  <div class="product-card__title"><h3>摩卡咖啡</h3><span class="product-price product-price--pending">價格待確認</span></div>
-                  <p>咖啡與巧克力風味相遇，再添奶香的柔和口感。</p>
+                  <p class="product-card__origin font-en">SICILIAN SPARKLING COFFEE</p>
+                  <div class="product-card__title"><h3>西西里檸檬氣泡咖啡</h3><span class="product-price">NT$140</span></div>
+                  <p>新鮮檸檬汁與氣泡水調合萃取濃縮咖啡，果酸清爽，夏季解膩首選。</p>
                 </div>
-              </article>
-              <article class="product-card">
+              </a>
+              <a class="product-card product-card--link" href="product.html?id=4" aria-label="查看產品：焦糖瑪奇朵">
                 <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="香草奶泡咖啡" loading="lazy">
-                  <span class="product-card__tag">補充提案</span>
+                  <img src="imgs/products/coffee2.jpg" alt="焦糖瑪奇朵" loading="lazy">
+                  <span class="product-card__tag">咖啡</span>
                 </div>
                 <div class="product-card__copy">
-                  <p class="product-card__origin font-en">VANILLA LATTE</p>
-                  <div class="product-card__title"><h3>香草拿鐵</h3><span class="product-price product-price--pending">價格待確認</span></div>
-                  <p>奶香拿鐵帶有淡淡香草甜韻，口感溫柔順口。</p>
+                  <p class="product-card__origin font-en">CARAMEL MACCHIATO</p>
+                  <div class="product-card__title"><h3>焦糖瑪奇朵</h3><span class="product-price">NT$160</span></div>
+                  <p>香濃奶泡上淋上自製香草糖漿與焦糖醬，甜而不膩，層次豐富。</p>
                 </div>
-              </article>
+              </a>
+            </div>
+          </section>
+
+          <section class="product-category" id="light-food" aria-labelledby="light-food-title">
+            <div class="product-category__heading">
+              <div>
+                <p class="eyebrow"><span></span> A GOOD BITE TO TAKE YOUR TIME</p>
+                <h2 id="light-food-title">輕食 <span class="font-en">Light meal</span></h2>
+              </div>
+              <p>以新鮮食材與暖心風味，搭配日常咖啡時光。</p>
+            </div>
+            <div class="product-grid">
+              <a class="product-card product-card--link" href="product.html?id=5" aria-label="查看產品：煙燻牛肉起司三明治">
+                <div class="product-card__image">
+                  <img src="imgs/products/beef_sandwidth.jpg" alt="煙燻牛肉起司三明治" loading="lazy">
+                  <span class="product-card__tag">輕食</span>
+                </div>
+                <div class="product-card__copy">
+                  <p class="product-card__origin font-en">SMOKED BEEF &amp; CHEESE SANDWICH</p>
+                  <div class="product-card__title"><h3>煙燻牛肉起司三明治</h3><span class="product-price">NT$180</span></div>
+                  <p>嚴選黑胡椒煙燻牛肉片搭配切達起司與酸黃瓜，使用巧巴達麵包壓烤至外酥內軟。</p>
+                </div>
+              </a>
+              <a class="product-card product-card--link" href="product.html?id=6" aria-label="查看產品：舒肥雞肉酪梨可頌">
+                <div class="product-card__image">
+                  <img src="imgs/products/chicken_bread.jpg" alt="舒肥雞肉酪梨可頌" loading="lazy">
+                  <span class="product-card__tag">輕食</span>
+                </div>
+                <div class="product-card__copy">
+                  <p class="product-card__origin font-en">CHICKEN &amp; AVOCADO CROISSANT</p>
+                  <div class="product-card__title"><h3>舒肥雞肉酪梨可頌</h3><span class="product-price">NT$190</span></div>
+                  <p>酥脆蜂巢可頌夾入嫩煎舒肥雞胸肉、新鮮酪梨切片與芝麻葉，清爽無負擔。</p>
+                </div>
+              </a>
+              <a class="product-card product-card--link" href="product.html?id=7" aria-label="查看產品：松露野菇帕里尼">
+                <div class="product-card__image">
+                  <img src="imgs/products/mushroom_panini.jpg" alt="松露野菇帕里尼" loading="lazy">
+                  <span class="product-card__tag">輕食</span>
+                </div>
+                <div class="product-card__copy">
+                  <p class="product-card__origin font-en">TRUFFLE MUSHROOM PANINI</p>
+                  <div class="product-card__title"><h3>松露野菇帕里尼</h3><span class="product-price">NT$170</span></div>
+                  <p>多種炒野菇拌入黑松露醬與莫札瑞拉起司，經過熱壓呈現香濃牽絲風味。</p>
+                </div>
+              </a>
+              <a class="product-card product-card--link" href="product.html?id=8" aria-label="查看產品：經典地中海鮪魚蛋沙拉吐司">
+                <div class="product-card__image">
+                  <img src="imgs/products/tuna_sandwidth.jpg" alt="經典地中海鮪魚蛋沙拉吐司" loading="lazy">
+                  <span class="product-card__tag">輕食</span>
+                </div>
+                <div class="product-card__copy">
+                  <p class="product-card__origin font-en">MEDITERRANEAN TUNA &amp; EGG TOAST</p>
+                  <div class="product-card__title"><h3>經典地中海鮪魚蛋沙拉吐司</h3><span class="product-price">NT$140</span></div>
+                  <p>自製水煮蛋鮪魚沙拉佐芥末籽醬，搭配厚片鮮奶吐司與新鮮番茄。</p>
+                </div>
+              </a>
             </div>
           </section>
 
@@ -149,77 +183,55 @@
             <div class="product-category__heading">
               <div>
                 <p class="eyebrow"><span></span> A LITTLE SEASONAL JOY</p>
-                <h2 id="dessert-title">手作甜點 <span class="font-en">Dessert</span></h2>
+                <h2 id="dessert-title">手工甜點 <span class="font-en">Dessert</span></h2>
               </div>
               <p>以當季食材為靈感，為咖啡時光添一點輕甜。</p>
             </div>
             <div class="product-grid">
-              <article class="product-card">
+              <a class="product-card product-card--link" href="product.html?id=9" aria-label="查看產品：法式焦糖烤布蕾">
                 <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="切片巧克力蛋糕" loading="lazy">
-                  <span class="product-card__tag">人氣品項</span>
+                  <img src="imgs/products/creme_brulee.jpg" alt="表層焦糖酥脆的法式烤布蕾" loading="lazy">
+                  <span class="product-card__tag">手工甜點</span>
                 </div>
                 <div class="product-card__copy">
-                  <p class="product-card__origin font-en">CHOCOLATE CAKE</p>
-                  <div class="product-card__title"><h3>巧克力蛋糕</h3><span class="product-price">NT$120</span></div>
-                  <p>濃郁巧克力蛋糕，為咖啡時光添上一份經典甜味。</p>
+                  <p class="product-card__origin font-en">FRENCH CREME BRULEE</p>
+                  <div class="product-card__title"><h3>法式焦糖烤布蕾</h3><span class="product-price">NT$120</span></div>
+                  <p>使用香草籽與鮮奶油慢火燉煮，表層現烤金黃脆焦糖，口感滑順綿密。</p>
                 </div>
-              </article>
-              <article class="product-card">
+              </a>
+              <a class="product-card product-card--link" href="product.html?id=10" aria-label="查看產品：小山園抹茶提拉米蘇">
                 <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="新鮮草莓與奶油甜點" loading="lazy">
-                  <span class="product-card__tag">人氣品項</span>
+                  <img src="imgs/products/matcha_tiramisu.jpg" alt="小山園抹茶提拉米蘇" loading="lazy">
+                  <span class="product-card__tag">手工甜點</span>
                 </div>
                 <div class="product-card__copy">
-                  <p class="product-card__origin font-en">STRAWBERRY BOSTON PIE</p>
-                  <div class="product-card__title"><h3>草莓波士頓派</h3><span class="product-price">NT$130</span></div>
-                  <p>鬆軟蛋糕夾入草莓與奶香，酸甜清爽的午後甜點。</p>
+                  <p class="product-card__origin font-en">MATCHA TIRAMISU</p>
+                  <div class="product-card__title"><h3>小山園抹茶提拉米蘇</h3><span class="product-price">NT$160</span></div>
+                  <p>採用日本小山園抹茶粉，浸泡馬斯卡彭起司與手指餅乾，苦甜平衡帶有濃郁茶香。</p>
                 </div>
-              </article>
-              <article class="product-card">
+              </a>
+              <a class="product-card product-card--link" href="product.html?id=11" aria-label="查看產品：巴斯克乳酪蛋糕">
                 <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="綿密乳酪蛋糕" loading="lazy">
-                  <span class="product-card__tag">補充提案</span>
+                  <img src="imgs/products/basque_cheesecake.jpg" alt="巴斯克乳酪蛋糕" loading="lazy">
+                  <span class="product-card__tag">手工甜點</span>
                 </div>
                 <div class="product-card__copy">
-                  <p class="product-card__origin font-en">CHEESECAKE</p>
-                  <div class="product-card__title"><h3>經典乳酪蛋糕</h3><span class="product-price product-price--pending">價格待確認</span></div>
-                  <p>口感綿密帶有乳酪香氣，簡單搭配咖啡就很滿足。</p>
+                  <p class="product-card__origin font-en">BASQUE CHEESECAKE</p>
+                  <div class="product-card__title"><h3>巴斯克乳酪蛋糕</h3><span class="product-price">NT$150</span></div>
+                  <p>高溫烘烤呈現焦糖化表皮，內餡濃厚半熟，帶有濃郁乳香與微酸風味。</p>
                 </div>
-              </article>
-              <article class="product-card">
+              </a>
+              <a class="product-card product-card--link" href="product.html?id=12" aria-label="查看產品：手作肉桂捲佐奶油乳酪糖霜">
                 <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="新鮮檸檬裝飾的檸檬塔" loading="lazy">
-                  <span class="product-card__tag">補充提案</span>
+                  <img src="imgs/products/cinnamon_roll.jpg" alt="手作肉桂捲佐奶油乳酪糖霜" loading="lazy">
+                  <span class="product-card__tag">手工甜點</span>
                 </div>
                 <div class="product-card__copy">
-                  <p class="product-card__origin font-en">LEMON TART</p>
-                  <div class="product-card__title"><h3>檸檬塔</h3><span class="product-price product-price--pending">價格待確認</span></div>
-                  <p>清新的檸檬酸香搭配酥脆塔皮，帶來輕盈爽口的滋味。</p>
+                  <p class="product-card__origin font-en">CINNAMON ROLL WITH CREAM CHEESE FROSTING</p>
+                  <div class="product-card__title"><h3>手作肉桂捲佐奶油乳酪糖霜</h3><span class="product-price">NT$130</span></div>
+                  <p>香濃錫蘭肉桂粉與黑糖交織，外皮微酥內裡軟鬆，淋上自製奶油乳酪醬。</p>
                 </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="以季節水果點綴的鮮果塔" loading="lazy">
-                  <span class="product-card__tag">補充提案</span>
-                </div>
-                <div class="product-card__copy">
-                  <p class="product-card__origin font-en">SEASONAL FRUIT TART</p>
-                  <div class="product-card__title"><h3>季節水果塔</h3><span class="product-price product-price--pending">價格待確認</span></div>
-                  <p>以當季水果搭配香濃內餡，每一季都有不同風味。</p>
-                </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&amp;fit=crop&amp;w=850&amp;q=85" alt="肉桂與糖霜烘焙點心" loading="lazy">
-                  <span class="product-card__tag">補充提案</span>
-                </div>
-                <div class="product-card__copy">
-                  <p class="product-card__origin font-en">CINNAMON ROLL</p>
-                  <div class="product-card__title"><h3>肉桂捲</h3><span class="product-price product-price--pending">價格待確認</span></div>
-                  <p>肉桂香氣與柔軟麵包交疊，適合搭配一杯熱咖啡。</p>
-                </div>
-              </article>
+              </a>
             </div>
           </section>
         </div>
